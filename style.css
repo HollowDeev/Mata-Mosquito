@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    background-image: url(imagens/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.tamanho1 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.tamanho2 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+
+.tamanho3 {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+}
+
+.direita {
+    transform: rotateY(180deg);
+}
+
+#painel {
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+/* FIM DE JOGO */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.container button {
+    border: none;
+    border-radius: 15px;
+    font-size: 2rem;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgb(21, 21, 44);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Login e Game Over */
+.container img, #containerLogin img {
+    width: 300px;
+}
+
+.container form, #containerLogin form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container select, #containerLogin select {
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 10px;
+}
